@@ -1,0 +1,1 @@
+# university-mangement-auth-service
