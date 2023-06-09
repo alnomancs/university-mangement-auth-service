@@ -3,13 +3,13 @@ import cors from 'cors'
 const app: Application = express()
 
 //middleware
-          app.use(cors())
+app.use(cors())
 
 //parsers
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req: Request, res: any) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Working Successfully')
 })
 
