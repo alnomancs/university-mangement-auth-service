@@ -1,0 +1,65 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/.3dc84532b8c55f15b3daf7e094d12ec6f890748e-audit.json",
+    "files": [
+        {
+            "date": 1688633541089,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-06-09-success.log",
+            "hash": "78c1aa3b181073a94432d90d567de8ae59f7485d80f06d8b38d7062c59f2694a"
+        },
+        {
+            "date": 1688637262349,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-06-10-success.log",
+            "hash": "f20dea1fa043d997eea0108a4d27ccd9de76d72b3f05d73907899b524ec06cde"
+        },
+        {
+            "date": 1688638893802,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-06-11-success.log",
+            "hash": "531ccb7f73e69dbc283b216db236724c9846918e7a627a09f7d34ebb3bc73313"
+        },
+        {
+            "date": 1688718328071,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-07-09-success.log",
+            "hash": "8777e8c0e4dcc1606434e0ca07f217cde8739a5a91f937378dec980b4046b0af"
+        },
+        {
+            "date": 1688723090507,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-07-10-success.log",
+            "hash": "1cd1ac58769ae9056df899096c3fcf333dd972ea5a55b97f6df873353f9069ac"
+        },
+        {
+            "date": 1688725945088,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-07-11-success.log",
+            "hash": "463cacc808e981f3c349a1232a029e66ba535a53a7b59f92509f3bfc19df7a8b"
+        },
+        {
+            "date": 1688727681882,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-07-12-success.log",
+            "hash": "98c034643061e64590c744b1f040def8760c46a51b79234d41405d626ca26be9"
+        },
+        {
+            "date": 1688810652758,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-08-11-success.log",
+            "hash": "5d2f5db8957af0cd2d41df49d2bc7696c43a52fe7f26d483b1b20bd54e5278ce"
+        },
+        {
+            "date": 1688814006388,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-08-12-success.log",
+            "hash": "160c3487c9bc007aa2951d3c1e44e8bf34e005083dd2a59c4ead93854a70ace4"
+        },
+        {
+            "date": 1688978940025,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-10-09-success.log",
+            "hash": "d6c9f009924371ee48eeb807d9834d333aea096555d7c213070a110506a3a815"
+        },
+        {
+            "date": 1688979738484,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/success/ums-2023-07-10-10-success.log",
+            "hash": "58eada75a8bf83fc472106ce156a4043b9c0644a548a79bfc94522e4357de753"
+        }
+    ],
+    "hashType": "sha256"
+}

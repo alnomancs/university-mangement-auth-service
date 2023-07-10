@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/alnoman/Library/Mobile Documents/com~apple~CloudDocs/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/.826a1ce844545e164ecf1544c910662f7c761c46-audit.json",
+    "files": [
+        {
+            "date": 1688977708625,
+            "name": "/Users/alnoman/Library/Mobile Documents/com~apple~CloudDocs/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-10-09-error.log",
+            "hash": "c1b481f56481747794b2e0b1e0fe4d6892c3cef261be7c8e78497a16dd7c3241"
+        }
+    ],
+    "hashType": "sha256"
+}
