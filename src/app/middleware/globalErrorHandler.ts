@@ -1,4 +1,4 @@
-import { ErrorRequestHandler, Request, Response } from "express";
+import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import config from "../../config";
 import ApiError from "../../error/ApiError";
 import handleValidationError from "../../error/handleValidationError";
@@ -11,7 +11,8 @@ import { errorLogger } from "../../shared/logger";
 const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
-  res: Response
+  res: Response,
+  next: NextFunction
 ) => {
   config.env === "development"
     ? console.log(`🐱‍🏍 globalErrorHandler ~~`, error)
@@ -22,7 +23,6 @@ const globalErrorHandler: ErrorRequestHandler = (
   let errorMessages: IGenericErrorMessage[] = [];
 
   if (error?.name === "CastError") {
-    console.log("cast error");
     const simplifiedError = handleCastError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
@@ -49,6 +49,7 @@ const globalErrorHandler: ErrorRequestHandler = (
         ]
       : [];
   } else if (error instanceof Error) {
+    console.log(error, "noman");
     message = error?.message;
     errorMessages = error?.message
       ? [
@@ -66,6 +67,7 @@ const globalErrorHandler: ErrorRequestHandler = (
     errorMessages,
     stack: config.env !== "production" ? error?.stack : undefined,
   });
+  next();
 };
 
 export default globalErrorHandler;

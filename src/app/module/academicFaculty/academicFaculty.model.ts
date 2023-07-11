@@ -20,6 +20,7 @@ const academicFacultySchema = new Schema<IAcademicFaculty>(
 
 //pre hook
 academicFacultySchema.pre("save", async function (next) {
+  //next
   const isExist = await AcademicFaculty.findOne({
     title: this.title,
   });
@@ -28,8 +29,8 @@ academicFacultySchema.pre("save", async function (next) {
       httpStatus.CONFLICT,
       "Academic Faculty Already exists !"
     );
-    next();
   }
+  next();
 });
 export const AcademicFaculty = model<IAcademicFaculty>(
   "AcademicFaculty",

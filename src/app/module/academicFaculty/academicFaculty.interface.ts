@@ -8,4 +8,7 @@ export type IAcademicFaculty = {
   title: string;
 };
 
-export type AcamedicFacultyModel = Model<IAcademicFaculty>;
+export type AcamedicFacultyModel = Model<
+  IAcademicFaculty,
+  Record<string, unknown>
+>;

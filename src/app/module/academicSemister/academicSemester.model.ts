@@ -55,8 +55,8 @@ academicSemesterSchema.pre("save", async function (next) {
       httpStatus.CONFLICT,
       "Academic Semester Already exists !"
     );
-    next();
   }
+  next();
 });
 
 // export const AcademicSemester = model<IAcademicSemester, AcamedicSemesterModel>(
