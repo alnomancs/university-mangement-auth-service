@@ -1,15 +1,4 @@
-import { NextFunction, Request, Response } from "express";
-import { RequestHandler } from "express-serve-static-core";
-
-// const catchAsync2 = (fn: RequestHandler) => {
-//   return async function name(req: Request, res: Response, next: NextFunction) {
-//     try {
-//       fn(req, res, next);
-//     } catch (error) {
-//       next(error);
-//     }
-//   };
-// };
+import { NextFunction, Request, RequestHandler, Response } from "express";
 
 const catchAsync =
   (fn: RequestHandler) =>

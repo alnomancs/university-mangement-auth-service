@@ -1,4 +1,4 @@
-import express, { Application, Request, Response } from "express";
+import express, { Application, NextFunction, Request, Response } from "express";
 import cors from "cors";
 import globalErrorHandler from "./app/middleware/globalErrorHandler";
 import router from "./app/routes";
@@ -16,21 +16,11 @@ app.use(express.urlencoded({ extended: true }));
 //router
 app.use("/api/v1", router);
 
-// app.use("/api/v1/users/", UserRouter);
-// app.use("/api/v1/academic-semester/", AcademicSemesterRouter);
-//testing;
-// app.get("/", async (req: Request, res: Response, next: NextFunction) => {
-//   Promise.reject(new Error("Unhandled Promise Rejection"));
-//   //throw new ApiError(400, "ore baba");
-//   //next("ore baba error paisi");
-//   // res.send("Working Successfully");
-// });
-
 //global error handler
 app.use(globalErrorHandler);
 
 // handle not found
-app.use((req: Request, res: Response) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(httpStatus.NOT_FOUND).json({
     success: false,
     message: "Not Found",
@@ -41,6 +31,7 @@ app.use((req: Request, res: Response) => {
       },
     ],
   });
+  next();
 });
 
 export default app;

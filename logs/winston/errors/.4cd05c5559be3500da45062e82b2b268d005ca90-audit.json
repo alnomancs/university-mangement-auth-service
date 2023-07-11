@@ -59,6 +59,36 @@
       "date": 1688979745962,
       "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-10-10-error.log",
       "hash": "73fd927de30c2c0ee3cee8d8e53886b7af37e7c0633e52994904d693e389d060"
+    },
+    {
+      "date": 1689033057651,
+      "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-11-00-error.log",
+      "hash": "c629601a82e212877060c9fde559045be513f387359bd4d7d7d92d3166afaa54"
+    },
+    {
+      "date": 1689034370191,
+      "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-11-01-error.log",
+      "hash": "a0e1d3c66f705d8145b3bb376bad7c3179cbcdc704f7667950585535d1bc8c59"
+    },
+    {
+      "date": 1689063194906,
+      "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-11-09-error.log",
+      "hash": "3d4dc5b74f69135212002378be2f4006eedc60116cbd65eb1a5806e1429ad623"
+    },
+    {
+      "date": 1689067271441,
+      "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-11-10-error.log",
+      "hash": "79477b90d7e23f83e03c2f8f840116998898246e3be85a7c948a81261452f03c"
+    },
+    {
+      "date": 1689070069256,
+      "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-11-11-error.log",
+      "hash": "4616288f8f6ef31276a95faddf31b8e52eb05583cb3a97dd9193920a517af17a"
+    },
+    {
+      "date": 1689073310032,
+      "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-11-12-error.log",
+      "hash": "e04766d1c3953b4dd91db201aa8e7ba17aa04f75fa7d9436536b7e41e2009ddc"
     }
   ],
   "hashType": "sha256"
