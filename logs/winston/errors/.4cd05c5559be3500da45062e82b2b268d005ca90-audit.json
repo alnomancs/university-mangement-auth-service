@@ -124,6 +124,11 @@
             "date": 1689326016215,
             "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-14-10-error.log",
             "hash": "59a2a9080f9b27556404734b76d87c2cc9aad28420731003693d46698e916e0a"
+        },
+        {
+            "date": 1689333088540,
+            "name": "/Users/alnoman/Documents/web.programminghero.com/Next Level Web Development/mission 3/um-auth-service/logs/winston/errors/ums-2023-07-14-12-error.log",
+            "hash": "98657f141823992a7126f3a8133652a83c1d577a8e70fc41e55caac872744989"
         }
     ],
     "hashType": "sha256"
