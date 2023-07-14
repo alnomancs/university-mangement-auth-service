@@ -20,12 +20,6 @@ const createSemester = catchAsync(async (req: Request, res: Response) => {
     message: "Academic Semester creates successfully",
     data: result,
   });
-
-  // res.status(200).json({
-  //   success: true,
-  //   message: "Academic Semester creates successfully",
-  //   data: result,
-  // });
 });
 
 const getSemester = catchAsync(async (req: Request, res: Response) => {
