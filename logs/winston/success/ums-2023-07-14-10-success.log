@@ -1,0 +1,30 @@
+{
+  message: 'sigterm is received',
+  level: 'info',
+  label: 'ph',
+  timestamp: '2023-07-14T09:13:58.168Z'
+}
+{
+  message: 'sigterm is received',
+  level: 'info',
+  label: 'ph',
+  timestamp: '2023-07-14T09:17:49.499Z'
+}
+{
+  message: 'sigterm is received',
+  level: 'info',
+  label: 'ph',
+  timestamp: '2023-07-14T09:35:56.595Z'
+}
+{
+  message: 'sigterm is received',
+  level: 'info',
+  label: 'ph',
+  timestamp: '2023-07-14T09:41:18.958Z'
+}
+{
+  message: 'sigterm is received',
+  level: 'info',
+  label: 'ph',
+  timestamp: '2023-07-14T09:43:07.543Z'
+}
