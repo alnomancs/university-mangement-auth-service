@@ -6,12 +6,12 @@ import { FacultyValidation } from "./faculty.validation";
 const router = express.Router();
 
 router.get("/:id", FacultyController.getFaculty);
+router.get("/", FacultyController.getFaculties);
 router.patch(
   "/:id",
   validateRequest(FacultyValidation.updateFacultyZodSchema),
   FacultyController.updateFaculty
 );
-// router.delete("/id", FacultyController.deleteFaculty);
-router.get("/", FacultyController.getFaculties);
+router.delete("/id", FacultyController.deleteFaculty);
 
 export const FacultyRouter = router;

@@ -7,10 +7,12 @@ import { StudentRouter } from "../module/student/student.route";
 import { FacultyRouter } from "../module/faculty/faculty.route";
 import { AdminRouter } from "../module/admin/admin.router";
 import { ManagementDepartmentRouter } from "../module/management-department/managementDepartment.router";
+import { AuthRouter } from "../module/auth/auth.route";
 
 const router = express.Router();
 
 const moduleRoutes = [
+  { path: "/auth", route: AuthRouter }, //user routes
   { path: "/users", route: UserRouter }, //user routes
   { path: "/student", route: StudentRouter }, //student routes
   { path: "/faculty", route: FacultyRouter }, //faculty routes
