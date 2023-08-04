@@ -36,13 +36,8 @@ const getFaculty = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getFaculties = catchAsync(async (req: Request, res: Response) => {
-  // const paginationOptions = {
-  //   page: Number(req.query.page),
-  //   limit: Number(req.query.limit),
-  //   sortBy: Number(req.query.sortBy),
-  //   sortOrder: Number(req.query.sortOrder),
-  // };
-
+  console.log(req.headers.authorization, "authorization");
+  console.log(req.user, "user");
   const filters = pick(req.query, academicFacultyFilterableField);
   const paginationOptions = pick(req.query, paginationFields);
 

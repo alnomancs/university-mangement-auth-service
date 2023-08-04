@@ -7,33 +7,13 @@ const loginZodSchema = z.object({
   }),
 });
 
-const updateAdminZodSchema = z.object({
-  name: z
-    .object({
-      firstName: z.string().optional(),
-      middleName: z.string().optional(),
-      lastName: z.string().optional(),
-    })
-    .optional(),
-  dateOfBirth: z.string().optional(),
-  email: z.string().optional(),
-  gender: z.enum(["male", "female"]).optional(),
-  contactNo: z.string().optional(),
-  emergencyContactNo: z.string().optional(),
-  presentAddress: z.string().optional(),
-  permanentAddress: z.string().optional(),
-  designation: z.string().optional(),
-  managementDepartment: z
-    .object({
-      title: z.string().optional(),
-    })
-    .optional(),
+const refreshTokenZodSchema = z.object({
+  cookie: z.object({
+    refreshToken: z.string({ required_error: "Refresh Token is required" }),
+  }),
 });
-// .refine(data => data.body.title || !data.body.title, {
-//   message: "Either title should be provided or neither",
-// });
 
 export const AuthValidation = {
   loginZodSchema,
-  updateAdminZodSchema,
+  refreshTokenZodSchema,
 };

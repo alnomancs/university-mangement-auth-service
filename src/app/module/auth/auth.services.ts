@@ -56,6 +56,25 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   };
 };
 
+const refreshToken = async (token: string) => {
+  // first verify token
+  // invalid token - synchronous
+  let verifyToken = null;
+  try {
+    verifyToken = jwtHelper.verifyToken(
+      token,
+      config.jwt.refresh_secret as Secret
+    );
+    console.log(verifyToken);
+  } catch (err) {
+    throw new ApiError(httpStatus.FORBIDDEN, "Invalid refresh token");
+  }
+
+  const { userId, role } = verifyToken;
+  console.log(userId, role);
+};
+
 export const AuthService = {
   loginUser,
+  refreshToken,
 };

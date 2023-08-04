@@ -28,6 +28,27 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const refreshToken = catchAsync(async (req: Request, res: Response) => {
+  const { refreshToken } = req.cookies;
+
+  const result = await AuthService.refreshToken(refreshToken);
+
+  const cookieOption = {
+    secure: config.env === "production",
+    httpOnly: true,
+  };
+
+  res.cookie("refreshToken", refreshToken, cookieOption);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "User successfully logged in",
+    data: result,
+  });
+});
+
 export const AuthController = {
   loginUser,
+  refreshToken,
 };
