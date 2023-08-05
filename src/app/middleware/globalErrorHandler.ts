@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-vars */
 import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import config from "../../config";
 import ApiError from "../../error/ApiError";
@@ -11,7 +14,6 @@ const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
   res: Response,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   next: NextFunction
 ) => {
   config.env === "development"
