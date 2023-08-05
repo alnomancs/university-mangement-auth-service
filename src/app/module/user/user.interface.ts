@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Model, Types } from "mongoose";
 import { IStudent } from "../student/student.interface";
 import { IFaculty } from "../faculty/faculty.interface";
